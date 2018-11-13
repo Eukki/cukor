@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&subset=cyrillic');
+body {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 9;
+}
+
+h1 {
+    font-size: 33.333px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1.125;
+    margin: 0;
+}
+
+h2 {
+    font-size: 16.667px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0;
+}
+
+h3 {
+    font-size: 12.5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 600;
+    line-height: 1.667;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12.5px;
+    line-height: 1.667;
+}
+
+p {
+    margin: 0;
+    color: #fff;
+    font-size: 12.5px;
+    line-height: 1.667;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    font-size: 16.667px;
+    font-weight: 600;
+    line-height: 2.25;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-red {
+    background-color: #ff5c5c;
+    box-shadow: 0px 2px 19.2px 0.8px rgba(13, 15, 19, 0.4);
+}
+
+.button-black {
+    background-color: #191919;
+}

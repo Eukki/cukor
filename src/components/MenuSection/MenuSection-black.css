@@ -1,0 +1,371 @@
+.menu-section {
+    padding: 40px 0;
+}
+
+.menu-bar-black {
+    background-color: #191919;
+    max-width: 430px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 45px;
+}
+
+.menu-text {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0 10px;
+    overflow: visible;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-image {
+    position: inherit;
+    height: 40px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.cart-indicator-black {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #191919;
+    border-radius: 50%;
+    margin: -25px 10px 0 0;
+    color: #191919;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.products-wrapper-main{
+    padding: 0 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 430px;
+    background: #fff;
+    box-shadow: 0px 2px 25px 10px rgba(13, 15, 19, 0.1);
+    color: #696969;
+    margin: 62px 0 0 -343px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.dropdown-menu-item {
+    height: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdown-menu-item:hover {
+    box-shadow: 0px 2px 19.2px 0.8px rgba(13, 15, 19, 0.1);
+}
+
+.dropdown-cart {
+    width: 500px;
+    max-height: 550px;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0px 2px 25px 10px rgba(13, 15, 19, 0.1);
+    position: absolute;
+    margin: 63px 0 0 -379px;
+    padding-top: 20px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.dropdown-labels {
+    font-weight: bold;
+    margin-left: 56%;
+}
+
+.label-price {
+    margin-left: 15%;
+}
+
+.empty {
+    display: block;
+    position: relative;
+    color: #696969;
+    margin: 120px 0 0 155px;
+}   
+
+.empty::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 200px;
+    background-image: url(../../assets/cukor-empty.png);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.empty-button {
+    width: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.cart-item {
+    font-size: 1.2em;
+    position: relative;
+    height: 100px;
+    box-shadow: 2px 2px rgba(13, 15, 19, 0.1);
+    margin: 3px;
+}
+
+.cart-item-image {
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+}
+
+.cart-item-title {
+    max-width: 35%;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    color: black;
+    padding-left: 20px;
+    margin: 40px 1px 1px 1px;
+}
+
+.cart-item-price-black {
+    display: inline-block;
+    position: absolute;
+    margin: 40px 0 0 61%;
+    color: #191919;
+    font-weight: bold;
+}
+
+.cart-item-quantity-black {
+    display: inline-block;
+    position: absolute;
+    margin: 40px 0 0 44%;
+    font-weight: bold;
+}
+
+.cart-item-close {
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 18px;
+    background-image: url(../../assets/cross.png);
+    margin-left: 73%;
+    margin-top: 44px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.button-checkout {
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.pag {
+    display: block;
+    text-align: center
+}
+
+.pag-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 15px;
+    margin-bottom: 40px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.pag-active {
+    color: #ff5c5c;
+}
+
+@media screen and (max-width: 1239px) {
+    .products-wrapper-main {
+        padding: 0 240px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .products-wrapper-main {
+        padding: 0 140px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .products-wrapper-main {
+        padding: 0 80px;
+    }
+     .pag-number {
+        margin: 0 30px 40px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .products-wrapper-main {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown-cart {
+        width: 400px;
+        margin-left: -330px;
+    }
+    .dropdown-labels {
+        margin-left: 53%;
+    }
+
+    .cart-item-image {
+        height: 80%;
+        margin: 2% 0;
+    }
+    .empty {
+        margin-left: 101px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .products-wrapper-main {
+        padding: 0 0;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+     .dropdown-cart {
+        margin-left: -293px;
+        }
+    .dropdown-menu {
+        max-width: 360px;
+        margin-left: -275px;
+    }
+    .pag-number {
+        margin: 10px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dropdown-cart {
+        max-width: 300px;
+        margin-left: -244px;
+    }
+    .empty {
+        margin-left: 55px;
+        margin-top: 25px;
+    }
+     .dropdown-labels {
+        margin-left: 46%;
+    }
+    .dropdown-menu {
+        max-width: 300px;
+        margin-left: -244px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    
+    .dropdown-menu, .dropdown-cart {
+        max-width: 322px;
+        margin-left: -254px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hamburger {
+        margin: 0;
+    }
+    .dropdown-menu, .dropdown-cart {
+        max-width: 287px;
+        margin-left: -227px;
+    }
+    
+}

@@ -1,0 +1,30 @@
+{
+  "name": "cukor",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "d3-fetch": "^1.1.2",
+    "express": "^4.16.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-autosuggest": "^9.4.0",
+    "react-dom": "^16.4.1",
+    "react-input-mask": "^2.0.4",
+    "react-js-pagination": "^3.0.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-transition-group": "^1.1.2",
+    "reactstrap": "^6.4.0"
+  },
+  "scripts": {
+    "start": "cross-env HOST='dev.local.com' && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "https://dev.local.com"
+}
